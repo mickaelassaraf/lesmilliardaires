@@ -4,7 +4,7 @@ params = {
   'access_key': '7d337b020de9482a952705474ed9f009'
 }
 
-api_result = requests.get('https://api.aviationstack.com/v1/flights', params)
+api_result = requests.get('http://api.aviationstack.com/v1/flights', params)
 
 api_response = api_result.json()
 
