@@ -8,7 +8,7 @@ api_result = requests.get('http://api.aviationstack.com/v1/flights', params)
 
 api_response = api_result.json()
 
-for flight in api_response['results']:
+for flight in api_response['data']:
     if (flight['live']['is_ground'] is False):
         print(u'%s flight %s from %s (%s) to %s (%s) is in the air.' % (
             flight['airline']['name'],
